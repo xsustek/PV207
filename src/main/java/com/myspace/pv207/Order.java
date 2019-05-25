@@ -6,12 +6,23 @@ package com.myspace.pv207;
 
 public class Order implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Order() {
-    }
+	private java.lang.String currency;
 
+	public Order() {
+	}
 
+	public java.lang.String getCurrency() {
+		return this.currency;
+	}
 
+	public void setCurrency(java.lang.String currency) {
+		this.currency = currency;
+	}
+
+	public Order(java.lang.String currency) {
+		this.currency = currency;
+	}
 
 }
