@@ -6,12 +6,33 @@ package com.myspace.pv207;
 
 public class ExchangeRate implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public ExchangeRate() {
-    }
+	private java.lang.String base;
+	private java.lang.String rates;
 
+	public ExchangeRate() {
+	}
 
+	public java.lang.String getBase() {
+		return this.base;
+	}
 
+	public void setBase(java.lang.String base) {
+		this.base = base;
+	}
+
+	public java.lang.String getRates() {
+		return this.rates;
+	}
+
+	public void setRates(java.lang.String rates) {
+		this.rates = rates;
+	}
+
+	public ExchangeRate(java.lang.String base, java.lang.String rates) {
+		this.base = base;
+		this.rates = rates;
+	}
 
 }
