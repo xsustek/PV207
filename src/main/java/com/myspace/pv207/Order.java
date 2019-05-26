@@ -10,6 +10,8 @@ public class Order implements java.io.Serializable {
 
 	private java.lang.String currency;
 
+	private java.lang.String exchangeRate;
+
 	public Order() {
 	}
 
@@ -21,8 +23,17 @@ public class Order implements java.io.Serializable {
 		this.currency = currency;
 	}
 
-	public Order(java.lang.String currency) {
+	public java.lang.String getExchangeRate() {
+		return this.exchangeRate;
+	}
+
+	public void setExchangeRate(java.lang.String exchangeRate) {
+		this.exchangeRate = exchangeRate;
+	}
+
+	public Order(java.lang.String currency, java.lang.String exchangeRate) {
 		this.currency = currency;
+		this.exchangeRate = exchangeRate;
 	}
 
 }
