@@ -1,0 +1,1 @@
+{"id":"b0b9111a-af36-4621-b73f-a97e4f68f3fc","name":"GetInfo-taskform.frm","model":{"taskName":"GetInfo","processId":"PV207.Order","properties":[],"formModelType":"org.kie.workbench.common.forms.jbpm.model.authoring.task.TaskFormModel"},"fields":[],"layoutTemplate":{"version":2,"style":"FLUID","layoutProperties":{},"rows":[]}}
