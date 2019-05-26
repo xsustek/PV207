@@ -9,7 +9,7 @@ public class ExchangeRate implements java.io.Serializable {
 	static final long serialVersionUID = 1L;
 
 	private java.lang.String base;
-	private java.lang.String rates;
+	private java.util.HashMap rates;
 
 	public ExchangeRate() {
 	}
@@ -22,15 +22,15 @@ public class ExchangeRate implements java.io.Serializable {
 		this.base = base;
 	}
 
-	public java.lang.String getRates() {
+	public java.util.HashMap getRates() {
 		return this.rates;
 	}
 
-	public void setRates(java.lang.String rates) {
+	public void setRates(java.util.HashMap rates) {
 		this.rates = rates;
 	}
 
-	public ExchangeRate(java.lang.String base, java.lang.String rates) {
+	public ExchangeRate(java.lang.String base, java.util.HashMap rates) {
 		this.base = base;
 		this.rates = rates;
 	}
