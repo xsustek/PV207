@@ -10,8 +10,6 @@ public class Order implements java.io.Serializable {
 
 	private java.lang.String currency;
 
-	private java.util.HashMap exchangeRate;
-
 	public Order() {
 	}
 
@@ -23,17 +21,8 @@ public class Order implements java.io.Serializable {
 		this.currency = currency;
 	}
 
-	public java.util.HashMap getExchangeRate() {
-		return this.exchangeRate;
-	}
-
-	public void setExchangeRate(java.util.HashMap exchangeRate) {
-		this.exchangeRate = exchangeRate;
-	}
-
-	public Order(java.lang.String currency, java.util.HashMap exchangeRate) {
+	public Order(java.lang.String currency) {
 		this.currency = currency;
-		this.exchangeRate = exchangeRate;
 	}
 
 }
