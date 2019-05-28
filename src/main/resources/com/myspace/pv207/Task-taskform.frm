@@ -1,0 +1,1 @@
+{"id":"a3e49d24-f65c-409e-8ed4-9488e0216486","name":"Task-taskform.frm","model":{"taskName":"Task","processId":"PV207.INVOICING","properties":[],"formModelType":"org.kie.workbench.common.forms.jbpm.model.authoring.task.TaskFormModel"},"fields":[],"layoutTemplate":{"version":2,"style":"FLUID","layoutProperties":{},"rows":[]}}
