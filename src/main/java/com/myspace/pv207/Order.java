@@ -8,23 +8,13 @@ public class Order implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label("Name")
-	private java.lang.String name;
 	@org.kie.api.definition.type.Label("Price")
 	private java.lang.Integer price;
 
-	@org.kie.api.definition.type.Label(value = "Currency")
+	@org.kie.api.definition.type.Label("Currency")
 	private java.lang.String currency;
 
 	public Order() {
-	}
-
-	public java.lang.String getName() {
-		return this.name;
-	}
-
-	public void setName(java.lang.String name) {
-		this.name = name;
 	}
 
 	public java.lang.Integer getPrice() {
@@ -43,9 +33,7 @@ public class Order implements java.io.Serializable {
 		this.currency = currency;
 	}
 
-	public Order(java.lang.String name, java.lang.Integer price,
-			java.lang.String currency) {
-		this.name = name;
+	public Order(java.lang.Integer price, java.lang.String currency) {
 		this.price = price;
 		this.currency = currency;
 	}
