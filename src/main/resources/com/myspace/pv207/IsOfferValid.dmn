@@ -8,19 +8,83 @@
     <dmn:variable id="_376D7796-F848-4D52-8008-542961DF197D" name="price"/>
   </dmn:inputData>
   <dmn:decision id="_D341F65B-C07B-4968-8C40-4B04E7EC598F" name="Valid">
-    <dmn:variable id="_A001F731-DD3B-4862-B6F1-BD1E782B05B8" name="Valid"/>
+    <dmn:variable id="_A001F731-DD3B-4862-B6F1-BD1E782B05B8" name="Valid" typeRef="boolean"/>
     <dmn:informationRequirement id="_B81FE401-3F51-4358-9D95-350ECAADB50D">
       <dmn:requiredInput href="#_D842B36A-B9B5-49CD-A1DD-9E9918B17F8F"/>
     </dmn:informationRequirement>
     <dmn:informationRequirement id="_8724F9D7-63B5-48CA-9F29-21649A7622E0">
       <dmn:requiredInput href="#_CB11B338-AADB-42A7-A411-48446D54BA90"/>
     </dmn:informationRequirement>
-    <dmn:literalExpression/>
+    <dmn:decisionTable id="_0D636310-3ED7-4FDB-83A1-851FEF67FF54" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_B550E8B8-821A-4EBB-B48E-F9DC5C1746FA">
+        <dmn:inputExpression id="_6220939B-DECA-4D73-BFC6-2DF5CA678747" typeRef="number">
+          <dmn:text>stars</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:input id="_4B426297-43A6-4EE7-922D-C81E4CBDD76A">
+        <dmn:inputExpression id="_16DD60B4-0C7A-42E0-B337-2E67BF340314" typeRef="number">
+          <dmn:text>price</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:output id="_55EE4B6B-7234-4060-BCBD-B290ABD3E0B2" typeRef="boolean"/>
+      <dmn:rule id="_D1EC556E-B3F2-4B15-A348-FA3D9BA235AA">
+        <dmn:inputEntry id="_767CDD4E-53CF-46AA-8C0B-524AE55A173C">
+          <dmn:text>5</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_50C3F892-636E-41C2-AFD3-4B3C68A703ED">
+          <dmn:text>&gt;=10000</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_37417788-E8D0-4FEA-959C-E6BBF37D61C9">
+          <dmn:text>true</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_65ED9A1F-C0A5-4D0A-AB90-9544C86AD0D3">
+        <dmn:inputEntry id="_A3CF3105-BDEB-49FA-B53D-5671C8B04431">
+          <dmn:text>4</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_9A944212-4ABD-4831-BF9E-D09521C29C5B">
+          <dmn:text>&gt;=7000</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_57FFE6F6-78F1-4ACE-839F-C159D3E0E66D">
+          <dmn:text>true</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_5E8D6542-387A-414D-AD2E-62A7A4AA1C7F">
+        <dmn:inputEntry id="_361D7722-0515-435A-A0E2-72DDA68D114D">
+          <dmn:text>3</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_B87A651A-DD0F-4D09-914A-6C4D2F024D17">
+          <dmn:text>&gt;=4000</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_58F39E7E-A171-4842-BE08-46468684B269">
+          <dmn:text>true</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_5816784B-672B-4830-BD3E-430F5428F477">
+        <dmn:inputEntry id="_07E76E31-C2A6-4AFD-8CD9-79795E7C4321">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_E73C3306-2DAC-403A-9A34-E0F2B322FA02">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_39F8C793-0F32-4DD6-AEFD-9E89E673F247">
+          <dmn:text>false</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+    </dmn:decisionTable>
   </dmn:decision>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
       <di:extension>
-        <kie:ComponentsWidthsExtension/>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_0D636310-3ED7-4FDB-83A1-851FEF67FF54">
+            <kie:width>50.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+          </kie:ComponentWidths>
+        </kie:ComponentsWidthsExtension>
       </di:extension>
       <dmndi:DMNShape id="dmnshape-_CB11B338-AADB-42A7-A411-48446D54BA90" dmnElementRef="_CB11B338-AADB-42A7-A411-48446D54BA90" isCollapsed="false">
         <dmndi:DMNStyle>
