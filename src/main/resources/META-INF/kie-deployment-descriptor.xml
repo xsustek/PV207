@@ -24,7 +24,7 @@
         </work-item-handler>
         <work-item-handler>
             <resolver>mvel</resolver>
-            <identifier>new org.jbpm.process.workitem.email.EmailWorkItemHandler("", "", "", "")</identifier>
+            <identifier>new org.jbpm.process.workitem.email.EmailWorkItemHandler("192.168.1.38", "2500", "admin", "admin")</identifier>
             <parameters/>
             <name>Email</name>
         </work-item-handler>
