@@ -8,10 +8,13 @@ public class Offer implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Name")
+	@org.kie.api.definition.type.Label("Name")
 	private java.lang.String name;
-	@org.kie.api.definition.type.Label(value = "Location")
+	@org.kie.api.definition.type.Label("Location")
 	private java.lang.String location;
+
+	@org.kie.api.definition.type.Label(value = "Price")
+	private java.lang.Integer price;
 
 	public Offer() {
 	}
@@ -32,9 +35,19 @@ public class Offer implements java.io.Serializable {
 		this.location = location;
 	}
 
-	public Offer(java.lang.String name, java.lang.String location) {
+	public java.lang.Integer getPrice() {
+		return this.price;
+	}
+
+	public void setPrice(java.lang.Integer price) {
+		this.price = price;
+	}
+
+	public Offer(java.lang.String name, java.lang.String location,
+			java.lang.Integer price) {
 		this.name = name;
 		this.location = location;
+		this.price = price;
 	}
 
 }
