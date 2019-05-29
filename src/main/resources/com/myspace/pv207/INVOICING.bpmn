@@ -138,7 +138,7 @@
       </bpmn2:extensionElements>
       <bpmn2:incoming>_A14122C2-8CA9-4D86-A324-A419F1E309B0</bpmn2:incoming>
       <bpmn2:outgoing>_7A96E233-ABAC-4A8E-9BE1-872CA2C21C74</bpmn2:outgoing>
-      <bpmn2:script><![CDATA[kcontext.setVariable("invoiceUrl","http://192.168.1.38:5000/invoice/1");]]></bpmn2:script>
+      <bpmn2:script><![CDATA[kcontext.setVariable("invoiceUrl","http://localhost:5000/invoice/1");]]></bpmn2:script>
     </bpmn2:scriptTask>
     <bpmn2:parallelGateway id="_1AA33532-2625-4403-86B1-4D11BA14A3A9" gatewayDirection="Diverging">
       <bpmn2:incoming>_7A96E233-ABAC-4A8E-9BE1-872CA2C21C74</bpmn2:incoming>
@@ -253,7 +253,7 @@
       <bpmn2:dataInputAssociation id="_BHfaaoIyEemrm_RnFROhWA">
         <bpmn2:targetRef>_78AAB0B5-F194-4A75-9080-14BC79F65011_UrlInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_BHfaa4IyEemrm_RnFROhWA">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_BHfabIIyEemrm_RnFROhWA"><![CDATA[http://192.168.1.38:5000/invoice]]></bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_BHfabIIyEemrm_RnFROhWA"><![CDATA[http://localhost:5000/invoice]]></bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_BHfabYIyEemrm_RnFROhWA">_78AAB0B5-F194-4A75-9080-14BC79F65011_UrlInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
@@ -416,7 +416,7 @@ currency]]></drools:metaValue>
       <bpmn2:dataInputAssociation id="_BHfai4IyEemrm_RnFROhWA">
         <bpmn2:targetRef>_6662BDCD-254B-4B3C-88B7-1D222CD985F2_UrlInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_BHfajIIyEemrm_RnFROhWA">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_BHfajYIyEemrm_RnFROhWA"><![CDATA[http://192.168.1.38:5000/exchangeRate]]></bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_BHfajYIyEemrm_RnFROhWA"><![CDATA[http://localhost:5000/exchangeRate]]></bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_BHgBYIIyEemrm_RnFROhWA">_6662BDCD-254B-4B3C-88B7-1D222CD985F2_UrlInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>

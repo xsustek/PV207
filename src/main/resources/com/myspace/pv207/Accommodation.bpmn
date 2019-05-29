@@ -243,7 +243,7 @@ our offer ]]></drools:metaValue>
       <bpmn2:dataInputAssociation id="_Z_JrtoIXEemIFoU4kYxGdA">
         <bpmn2:targetRef>_B835271A-FB73-47FA-A4F3-448E485BFEE9_UrlInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_Z_Jrt4IXEemIFoU4kYxGdA">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_Z_JruIIXEemIFoU4kYxGdA"><![CDATA[http://192.168.1.38:5000/offer]]></bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_Z_JruIIXEemIFoU4kYxGdA"><![CDATA[http://localhost:5000/offer]]></bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_Z_JruYIXEemIFoU4kYxGdA">_B835271A-FB73-47FA-A4F3-448E485BFEE9_UrlInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>

@@ -485,7 +485,7 @@
       <bpmn2:dataInputAssociation id="_qm0p94IxEemrm_RnFROhWA">
         <bpmn2:targetRef>_635F65DC-BDE8-444C-92CF-DB6498C15905_UrlInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_qm0p-IIxEemrm_RnFROhWA">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_qm0p-YIxEemrm_RnFROhWA"><![CDATA[http://192.168.1.38:5000/order]]></bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_qm0p-YIxEemrm_RnFROhWA"><![CDATA[http://localhost:5000/order]]></bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_qm0p-oIxEemrm_RnFROhWA">_635F65DC-BDE8-444C-92CF-DB6498C15905_UrlInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
@@ -747,7 +747,7 @@
       <bpmn2:dataInputAssociation id="_qm1Q-oIxEemrm_RnFROhWA">
         <bpmn2:targetRef>_881FE2BB-357C-469C-9755-BAC69CE2651E_UrlInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_qm1Q-4IxEemrm_RnFROhWA">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_qm1Q_IIxEemrm_RnFROhWA"><![CDATA[http://192.168.1.38:5000/offer/1]]></bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_qm1Q_IIxEemrm_RnFROhWA"><![CDATA[http://localhost:5000/offer/1]]></bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_qm1Q_YIxEemrm_RnFROhWA">_881FE2BB-357C-469C-9755-BAC69CE2651E_UrlInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
