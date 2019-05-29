@@ -6,12 +6,47 @@ package com.myspace.pv207;
 
 public class User implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public User() {
-    }
+	@org.kie.api.definition.type.Label(value = "User name")
+	private java.lang.String userName;
+	@org.kie.api.definition.type.Label(value = "Name")
+	private java.lang.String name;
+	@org.kie.api.definition.type.Label(value = "Email")
+	private java.lang.String email;
 
+	public User() {
+	}
 
+	public java.lang.String getUserName() {
+		return this.userName;
+	}
 
+	public void setUserName(java.lang.String userName) {
+		this.userName = userName;
+	}
+
+	public java.lang.String getName() {
+		return this.name;
+	}
+
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public java.lang.String getEmail() {
+		return this.email;
+	}
+
+	public void setEmail(java.lang.String email) {
+		this.email = email;
+	}
+
+	public User(java.lang.String userName, java.lang.String name,
+			java.lang.String email) {
+		this.userName = userName;
+		this.name = name;
+		this.email = email;
+	}
 
 }
