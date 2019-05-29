@@ -14,6 +14,9 @@ public class Order implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Currency")
 	private java.lang.String currency;
 
+	@org.kie.api.definition.type.Label(value = "Email")
+	private java.lang.String email;
+
 	public Order() {
 	}
 
@@ -33,9 +36,19 @@ public class Order implements java.io.Serializable {
 		this.currency = currency;
 	}
 
-	public Order(java.lang.Integer price, java.lang.String currency) {
+	public java.lang.String getEmail() {
+		return this.email;
+	}
+
+	public void setEmail(java.lang.String email) {
+		this.email = email;
+	}
+
+	public Order(java.lang.Integer price, java.lang.String currency,
+			java.lang.String email) {
 		this.price = price;
 		this.currency = currency;
+		this.email = email;
 	}
 
 }
