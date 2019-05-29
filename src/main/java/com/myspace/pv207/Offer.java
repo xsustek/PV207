@@ -6,12 +6,35 @@ package com.myspace.pv207;
 
 public class Offer implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Offer() {
-    }
+	@org.kie.api.definition.type.Label(value = "Name")
+	private java.lang.String name;
+	@org.kie.api.definition.type.Label(value = "Location")
+	private java.lang.String location;
 
+	public Offer() {
+	}
 
+	public java.lang.String getName() {
+		return this.name;
+	}
 
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public java.lang.String getLocation() {
+		return this.location;
+	}
+
+	public void setLocation(java.lang.String location) {
+		this.location = location;
+	}
+
+	public Offer(java.lang.String name, java.lang.String location) {
+		this.name = name;
+		this.location = location;
+	}
 
 }
